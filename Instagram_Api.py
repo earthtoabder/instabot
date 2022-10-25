@@ -11,8 +11,8 @@ else:
     print("The json file does not exist")   
 
 # keys
-username = "the.art.bot"
-password = "ArtBot00"
+username = "" #type your username
+password = "" #type your password
 # getting into insta servers
 api = Bot()
 time.sleep(5)
@@ -25,7 +25,7 @@ quotes = open("Quotes.txt").read().splitlines()
 
 # the upload function
 def upload_media():
-    api.upload_photo(f"/Users/Abder/Desktop/Twitter_Api_Stuff/Pictures/{random_pic}",caption=f"{random_quote}.")
+    api.upload_photo(f"/Users/Pictures/{random_pic}",caption=f"{random_quote}.") #enter the directory to the folder of the pictures you want to post
     print("image posted!")
 
 # posting file function
